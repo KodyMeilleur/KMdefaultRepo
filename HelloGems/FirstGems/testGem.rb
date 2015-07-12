@@ -1,3 +1,9 @@
+
+BEGIN{
+puts "ZA!";
+  puts "";
+}
+
 class Echoes
   $testvar = "1" #global variable
   @@testvar2 = 2 #class wide variable
@@ -15,11 +21,6 @@ end
 
 object = Echoes.new(1,2)
 object.firstmethod
-
-BEGIN{
-puts "ZA!";
-  puts "";
-}
 
 END{
 puts " #{$testvar} And Time Resumes...";
